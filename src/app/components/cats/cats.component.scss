@@ -1,0 +1,10 @@
+.pets{
+    display: flex;
+    justify-content: left;
+    .gender{
+        margin: 10px;
+        ul{
+            list-style: decimal;
+        }
+    }
+}

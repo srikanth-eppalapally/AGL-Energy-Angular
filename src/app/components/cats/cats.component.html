@@ -1,0 +1,13 @@
+<div *ngIf="genderWiseCatsList">
+    <h3>Pets Group by Owners Gender</h3>
+    <div class="pets">
+        <div class="gender" *ngFor="let item of genderWiseCatsList | keyvalue">
+            <h5>Cats of {{item.key}} Gender</h5>
+            <ul class="{{item.key}}" *ngIf="item.value.length">
+                <li *ngFor="let pet of item.value">
+                    {{pet.name}}
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
